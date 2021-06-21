@@ -26,8 +26,8 @@ This theme has a **form-to-email** feature built in, thanks to the simple Formsp
 Now edit the form front matter (`/content/forms/contact.md`) and use your Formspree form id in the part asking for formspree_form_id.
 
 ```toml
-# please replace with a valid Formspree form id or email address
-formspree_form_id: your@email.here
+# please replace with a valid Formspree form id
+formspree_form_id: xxxxxxxx
 ```
 
 Update that file and you're ready to begin receiving submissions.The next time someone
