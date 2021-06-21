@@ -21,17 +21,16 @@ layout: single
 
 ### Functional Form
 
-This theme has a **form-to-email** feature built in, thanks to the simple Formspree integration. All you need to activate the form is a valid recipient email address saved in the front matter of the form
-(`/content/forms/contact.md`). Of course, the example shown below (`your@email.here`) must not be used. Please use your actual email address.
+This theme has a **form-to-email** feature built in, thanks to the simple Formspree integration. First, [login](https://formspree.io/login) to your existing account or [register](https://formspree.io/register) for a new account at Formspree. Then create a new form in Formspree. Open Details -> Integration and you would see endpoint of your newly-created form. It is like https://formspree.io/f/xxxxxxxx. Note your Formspree form id (xxxxxxxx).
+
+Now edit the form front matter (`/content/forms/contact.md`) and use your Formspree form id in the part asking for formspree_form_id.
 
 ```toml
 # please replace with a valid Formspree form id or email address
 formspree_form_id: your@email.here
 ```
 
-Update that file and you're ready to begin receiving submissions. Just submit
-the active form for the first time, and complete the email address verification
-step with Formspree, and your contact form is live. The next time someone
+Update that file and you're ready to begin receiving submissions.The next time someone
 fills it out, the submission will land in your inbox.
 
 ### Multiple Layouts
